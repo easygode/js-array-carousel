@@ -1,5 +1,46 @@
+/*Reset*/
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+/* Slideshow container */
+.carousel-container {
+    position: relative;
+    margin: 0 auto;
+    background-color: antiquewhite;
+  }
+
+img {
+    width: 100vh;
+    height: 60vh;
+    margin: 0 auto;
+    object-fit: cover;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+  
+  /* Hide the images by default */
+  .image {
+    display: block;
+  }
+  
+  /* Next and previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    left: 28%;
+    color: red;
+    font-weight: bold;
+    font-size: 40px;
+  }
+
+   /* Position next button to the right */
+  .next {
+    left: 70%;
+  }
