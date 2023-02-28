@@ -21,11 +21,12 @@ img {
     display: flex;
     align-content: center;
     justify-content: center;
+    display: none;
 }
 
   
-  /* Hide the images by default */
-  .image {
+  /* Add show class to display images */
+  .show {
     display: block;
   }
   
@@ -38,9 +39,18 @@ img {
     color: red;
     font-weight: bold;
     font-size: 40px;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    border-radius: 50%;
+    background-color: aliceblue;
   }
 
    /* Position next button to the right */
   .next {
     left: 70%;
+  }
+
+  /* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,1);
   }
